@@ -1,7 +1,11 @@
 {
   "name": "gqemail",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "dependencies":{
     "emailjs":""
-  }
+  },
+  "private":false,
+  "description":"this is a small modified module for sending a zip file along with some messages. This module is used by other gq modules for backing up server dbs and sending the resulting zip file to a third party email account.",
+  "license":"MIT",
+  "repository":"git@github.com:goldfiction/gqemail.git"
 }
