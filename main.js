@@ -32,14 +32,14 @@ function emailit(o,cb) {
         ]
     }
 
-    console.log(msg);
+    //console.log(msg);
 
     var server = email.server.connect(_from);
 
     setTimeout(function () {
         server.send(msg, function (err, message) {
-            if(!err)
-                console.log("email sent!");
+            //if(!err)
+            //    console.log("email sent!");
             try {
                 cb(err, message);
             } catch (e) {
