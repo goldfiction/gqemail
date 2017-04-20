@@ -2,9 +2,9 @@
  * Created by happy on 3/26/17.
  */
 var email = require("emailjs");
-var util = require("util");
 var _subject=" ";
 var _cc="";
+var _to="";
 
 var _from = {
     user: "notify553@gmail.com", // leave this account alone
