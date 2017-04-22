@@ -27,9 +27,17 @@ function emailit(o,cb) {
     };
 
     if(o.file){
-        msg.attachment=[
+        msg.attachment=msg.attachment||[];
+        msg.attachment.push(
             {path:process.cwd()+"/"+ o.file, type:"application/zip", name: o.file}
-        ]
+        )
+    }
+
+    if(o.html){
+        msg.attachment=msg.attachment||[];
+        msg.attachment.push(
+            {data: o.html,alternative:true}
+        )
     }
 
     //console.log(msg);
