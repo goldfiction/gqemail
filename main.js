@@ -15,6 +15,10 @@ var _from = {
 };
 var delayTime = 10;
 
+function setServer(fromIn){
+    _from=fromIn
+}
+
 function emailit(o,cb) {
 
 
@@ -57,3 +61,4 @@ function emailit(o,cb) {
 }
 
 exports.emailit=emailit;
+exports.setServer=setServer;
