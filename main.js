@@ -16,7 +16,10 @@ var _from = {
 var delayTime = 10;
 
 function setServer(fromIn){
-    _from=fromIn
+    for(var i in fromIn){
+        _from[i]=fromIn[i]
+    }
+    return _from
 }
 
 function emailit(o,cb) {
