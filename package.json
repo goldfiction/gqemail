@@ -1,9 +1,9 @@
 {
   "name": "gqemail",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main":"./main.js",
   "dependencies":{
-    "emailjs":"1.0.0"
+    "emailjs":"1.0.8"
   },
   "private":false,
   "description":"this is a small modified module for sending a zip file along with some messages. This module is used by other gq modules for backing up server dbs and sending the resulting zip file to a third party email account.",

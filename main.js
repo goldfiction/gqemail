@@ -27,7 +27,7 @@ function emailit(o,cb) {
 
     var msg = {
         text: (o.text || " "),
-        from: "notify <notify553@gmail.com>",// please leave this mailer account alone
+        from: (_from.user || "notify <notify553@gmail.com>"),// please leave this mailer account alone
         to: (o.to || _to),
         cc: (o.cc || _cc || ""),
         subject: (o.subject ||_subject|| "")
