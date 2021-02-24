@@ -8,7 +8,7 @@ var _to="";
 
 var _from = {
     user: "notify553@gmail.com", // leave this account alone
-    password: "23062306",            // don't change password
+    password: "bfjqlwbhekzvkhuy",            // don't change password
     host: "smtp.gmail.com",      // use your own gmail account for privacy
     port: 465,
     ssl: true
