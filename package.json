@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": "git@github.com:goldfiction/gqemail.git",
   "versionHistory":{
-    "1.0.10":"fixed broken default password"
+    "1.0.10":"fixed broken default password",
     "1.0.0":"init"
   }
 }
