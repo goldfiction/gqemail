@@ -1,7 +1,7 @@
 /**
  * Created by happy on 3/26/17.
  */
-var email = require("emailjs");
+import { SMTPClient } from 'emailjs'
 var _subject=" ";
 var _cc="";
 var _to="";
@@ -49,7 +49,7 @@ function emailit(o,cb) {
 
     //console.log(msg);
 
-    var server = email.server.connect(_from);
+    var server = new SMTPClient(_from);
 
     setTimeout(function () {
         server.send(msg, function (err, message) {
@@ -63,5 +63,6 @@ function emailit(o,cb) {
     }, delayTime);
 }
 
-exports.emailit=emailit;
-exports.setServer=setServer;
+export const _emailit=emailit
+export const _setServer=setServer
+export default emailit
